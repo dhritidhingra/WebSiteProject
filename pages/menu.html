@@ -1,0 +1,81 @@
+<section id="page-menu" class="page-section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-heading">Taste the Quality</span>
+                    <h2>Our Artisan Menu</h2>
+                    <p>Handcrafted espresso drinks, signature teas, and freshly baked pastries made daily.</p>
+                </div>
+
+                <!-- Menu Tabs -->
+                <div class="menu-tabs">
+                    <button onclick="filterMenu('all')" class="menu-tab-btn active-tab">All Items</button>
+                    <button onclick="filterMenu('coffee')" class="menu-tab-btn">Coffee & Espresso</button>
+                    <button onclick="filterMenu('tea')" class="menu-tab-btn">Teas & Lattes</button>
+                    <button onclick="filterMenu('pastry')" class="menu-tab-btn">Pastries & Bakery</button>
+                    <button onclick="filterMenu('brunch')" class="menu-tab-btn">Brunch & Toast</button>
+                </div>
+
+                <!-- Menu Grid -->
+                <div id="menu-grid" class="grid-3">
+                    <!-- Item 1 -->
+                    <div class="menu-item card" data-category="coffee">
+                        <div class="menu-item-header">
+                            <h3>Vanilla Bean Honey Latte</h3>
+                            <span class="price">$5.50</span>
+                        </div>
+                        <p class="menu-desc">Double shot espresso, organic local wildflower honey, steamed oat milk, and house-made vanilla bean paste.</p>
+                        <span class="item-tag signature">Signature Drink</span>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="menu-item card" data-category="coffee">
+                        <div class="menu-item-header">
+                            <h3>Nitro Cold Brew</h3>
+                            <span class="price">$4.75</span>
+                        </div>
+                        <p class="menu-desc">Steeped for 18 hours, infused with nitrogen for a velvety, creamy cascade and naturally sweet finish.</p>
+                        <span class="item-tag">Iced Only</span>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="menu-item card" data-category="tea">
+                        <div class="menu-item-header">
+                            <h3>Ceremonial Grade Matcha Latte</h3>
+                            <span class="price">$5.75</span>
+                        </div>
+                        <p class="menu-desc">Pure Japanese green tea matcha whisked with your choice of milk and a touch of organic cane sugar.</p>
+                        <span class="item-tag signature">Superfood</span>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="menu-item card" data-category="pastry">
+                        <div class="menu-item-header">
+                            <h3>Almond Butter Croissant</h3>
+                            <span class="price">$4.25</span>
+                        </div>
+                        <p class="menu-desc">Flaky, golden, all-butter croissant filled with rich frangipane almond cream and toasted sliced almonds.</p>
+                        <span class="item-tag">Baked Fresh Daily</span>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="menu-item card" data-category="pastry">
+                        <div class="menu-item-header">
+                            <h3>Wild Blueberry Scone</h3>
+                            <span class="price">$3.85</span>
+                        </div>
+                        <p class="menu-desc">Tender, buttery scone loaded with fresh wild blueberries and topped with a light lemon vanilla glaze.</p>
+                        <span class="item-tag">Vegetarian</span>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="menu-item card" data-category="brunch">
+                        <div class="menu-item-header">
+                            <h3>Avocado Blossom Toast</h3>
+                            <span class="price">$9.50</span>
+                        </div>
+                        <p class="menu-desc">Thick-cut artisanal sourdough, smashed Hass avocado, heirloom cherry tomatoes, sesame seeds, and microgreens.</p>
+                        <span class="item-tag signature">Customer Favorite</span>
+                    </div>
+                </div>
+            </div>
+        </section>

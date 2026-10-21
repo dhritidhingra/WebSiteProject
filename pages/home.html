@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brew & Blossom Cafe - Artisan coffee, fresh pastries, cozy botanical atmosphere, and custom catering.">
+    <meta name="keywords" content="cafe, coffee shop, bakery, artisan pastries, catering, espresso, specialty coffee">
+    <title>Brew & Blossom Cafe</title>
+    
+    <!-- Link to External Stylesheet -->
+    <link rel="stylesheet" href="../styling/style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header id="site-header">
+        <div class="nav-container">
+            
+            <!-- Logo -->
+            <a href="home.html" class="logo-wrapper">
+                <img src="../styling/images/Logo.png" alt="Brew & Blossom Logo" class="custom-logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">Brew & Blossom</span>
+                    <span class="logo-subtitle">Artisan Cafe & Bakery</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="desktop-nav">
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="location.html">Location</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <!-- Book Catering CTA Button -->
+            <div class="header-actions">
+                <a href="catering.html" class="btn-catering">Book Catering</a>
+                <button id="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="mobile-drawer hidden">
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Our Menu</a>
+            <a href="gallery.html">Photo Gallery</a>
+            <a href="location.html">Location & Maps</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="catering.html" class="mobile-catering">Book Catering</a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- 3-COLUMN HERO BANNER -->
+        <section class="hero-split">
+            <!-- Left Image Panel -->
+            <div class="hero-card hero-image-card">
+                <img src="../styling/images/left-hero.jpg" alt="Bakery Display" class="hero-img">
+            </div>
+
+            <!-- Center Branding Panel -->
+            <div class="hero-card hero-brand-card">
+                <div class="brand-badge">Artisan Bakery & Cafe</div>
+                <h1 class="brand-title">Brew & Blossom</h1>
+                <p class="brand-tagline">Handcrafted Pastries & Specialty Coffee</p>
+                <div class="hero-cta-group">
+                    <a href="menu.html" class="btn-hero-brand">Explore Our Menu</a>
+                </div>
+            </div>
+
+            <!-- Right Image Panel -->
+            <div class="hero-card hero-image-card">
+                <img src="../styling/images/right-hero.jpg" alt="Specialty Drink" class="hero-img">
+            </div>
+        </section>
+
+        <!-- HIGHLIGHT CARDS SECTION -->
+        <section class="highlights-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Crafted With Care & Passion</h2>
+                    <p>Every cup we pour and pastry we bake is thoughtfully prepared to bring warmth to your day.</p>
+                </div>
+
+                <div class="grid-3">
+                    <div class="card">
+                        <div class="card-icon"><i class="fa-solid fa-seedling"></i></div>
+                        <h3>Ethically Sourced</h3>
+                        <p>We partner with sustainable coffee farmers worldwide to bring you single-origin beans roasted to perfection.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fa-solid fa-bread-slice"></i></div>
+                        <h3>Freshly Baked Daily</h3>
+                        <p>Our bakers arrive before dawn to prepare flaky croissants, artisan sourdough, and decadent desserts from scratch.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fa-solid fa-heart"></i></div>
+                        <h3>Cozy Sanctuary</h3>
+                        <p>Relax surrounded by botanicals, natural sunlight, comfortable seating, and friendly local baristas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <span class="footer-title">Brew & Blossom Cafe</span>
+                <p class="footer-copy">&copy; 2026 Brew & Blossom Cafe. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="menu.html">Menu</a>
+                <a href="catering.html">Catering</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVITY JAVASCRIPT -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
