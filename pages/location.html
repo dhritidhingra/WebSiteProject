@@ -1,34 +1,90 @@
-<section id="page-location" class="page-section bg-alt">
-            <div class="container">
-                <div class="section-header">
-                    <span class="sub-heading">Find Us</span>
-                    <h2>Location & Hours</h2>
-                    <p>We're located in the heart of the downtown arts district. Drop by for a cup!</p>
-                </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find Brew & Blossom Cafe - Location, map, hours of operation.">
+    <title>Location & Hours | Brew & Blossom Cafe</title>
+    
+    <link rel="stylesheet" href="../styling/style.css">
+    <script src="../styling/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
 
-                <div class="location-grid">
-                    <!-- Hours & Address Card -->
-                    <div class="location-card">
-                        <div>
-                            <h3><i class="fa-solid fa-location-dot"></i> Address</h3>
-                            <p>742 Evergreen Terrace, Suite 100<br>Downtown Arts District</p>
-                        </div>
-                        <div>
-                            <h3><i class="fa-solid fa-clock"></i> Hours of Operation</h3>
-                            <ul class="hours-list">
-                                <li><span>Monday – Friday:</span> <span class="hours-time">7:00 AM – 6:00 PM</span></li>
-                                <li><span>Saturday – Sunday:</span> <span class="hours-time">8:00 AM – 5:00 PM</span></li>
-                            </ul>
-                        </div>
-                        <a href="https://maps.google.com/?q=742+Evergreen+Terrace" target="_blank" class="btn-map">
-                            <i class="fa-solid fa-map-location-dot"></i> Open in Google Maps
-                        </a>
-                    </div>
-
-                    <!-- Map Embed Container -->
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.9537363153169!3d-37.81720974202144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d6a32f7f1!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1581000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
+    <header id="site-header">
+        <div class="nav-container">
+            <a href="home.html" class="logo-wrapper">
+                <img src="../styling/images/Logo.png" alt="Brew & Blossom Logo" class="custom-logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">Brew & Blossom</span>
+                    <span class="logo-subtitle">Artisan Cafe & Bakery</span>
                 </div>
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="location.html" class="active">Location</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="catering.html" class="btn-catering">Book Catering</a>
+                <button id="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
-        </section>
+        </div>
+
+        <div id="mobile-menu" class="mobile-drawer hidden">
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Our Menu</a>
+            <a href="gallery.html">Photo Gallery</a>
+            <a href="location.html">Location & Maps</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="catering.html">Book Catering</a>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container text-center">
+            <span class="brand-badge">Visit Us</span>
+            <h1 class="page-title">Location & Hours</h1>
+            <p class="page-description">Stop by for your daily roast and fresh morning pastries.</p>
+        </div>
+    </section>
+
+    <main class="container page-content">
+        <div class="location-card-grid">
+            <div class="info-box">
+                <i class="fa-solid fa-location-dot location-icon"></i>
+                <h3>Our Cafe</h3>
+                <p>123 Blossom Way, Suite A<br>Memphis, TN 38111</p>
+            </div>
+
+            <div class="info-box">
+                <i class="fa-solid fa-clock location-icon"></i>
+                <h3>Cafe Hours</h3>
+                <p>Monday – Friday: 6:30 AM – 6:00 PM<br>Saturday – Sunday: 7:00 AM – 7:00 PM</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <span class="footer-title">Brew & Blossom Cafe</span>
+                <p class="footer-copy">&copy; 2026 Brew & Blossom Cafe. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="menu.html">Menu</a>
+                <a href="catering.html">Catering</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

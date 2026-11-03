@@ -1,83 +1,96 @@
-<section id="page-catering" class="page-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="sub-heading">Events & Gatherings</span>
-                    <h2>Catering Services</h2>
-                    <p>Bring the Brew & Blossom experience to your next office meeting, wedding brunch, or private celebration.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book Catering with Brew & Blossom Cafe - Custom dessert and coffee catering for events.">
+    <title>Book Catering | Brew & Blossom Cafe</title>
+    
+    <link rel="stylesheet" href="../styling/style.css">
+    <script src="../styling/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header id="site-header">
+        <div class="nav-container">
+            <a href="home.html" class="logo-wrapper">
+                <img src="../styling/images/Logo.png" alt="Brew & Blossom Logo" class="custom-logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">Brew & Blossom</span>
+                    <span class="logo-subtitle">Artisan Cafe & Bakery</span>
                 </div>
+            </a>
 
-                <!-- Pricing Table -->
-                <div class="table-container-wrapper">
-                    <h3>Catering Package Options</h3>
-                    <div class="table-responsive">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Package Name</th>
-                                    <th>Best Suited For</th>
-                                    <th>Includes</th>
-                                    <th>Price Estimate</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="table-bold">Morning Boardroom</td>
-                                    <td>Office Meetings (10-25 guests)</td>
-                                    <td>Boxed drip coffee carafe, assorted pastry platter, fruit garnish.</td>
-                                    <td class="table-price">$150 / event</td>
-                                </tr>
-                                <tr>
-                                    <td class="table-bold">Botanical Espresso Bar</td>
-                                    <td>Weddings & Parties (30-80 guests)</td>
-                                    <td>Full espresso bar setup, two professional baristas, specialty syrups, oat/whole milk.</td>
-                                    <td class="table-price">$450 / 3 hours</td>
-                                </tr>
-                                <tr>
-                                    <td class="table-bold">Full Brunch Spread</td>
-                                    <td>Large Events & Receptions (50+ guests)</td>
-                                    <td>Espresso bar, assorted teas, full pastry spread, and artisan avocado toast station.</td>
-                                    <td class="table-price">Custom Quote</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+            <nav class="desktop-nav">
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="location.html">Location</a>
+                <a href="contact.html">Contact</a>
+            </nav>
 
-                <!-- Catering Free Form Service -->
-                <div class="form-container">
-                    <h3>Request a Catering Booking</h3>
-                    <p class="form-subtitle">Fill out the form below and our catering coordinator will get back to you within 24 hours.</p>
-
-                    <form action="https://formspree.io/f/mabndkqr" method="POST">
-                        <div class="form-grid-2">
-                            <div class="form-group">
-                                <label>Your Name</label>
-                                <input type="text" name="name" required placeholder="Jane Doe">
-                            </div>
-                            <div class="form-group">
-                                <label>Email Address</label>
-                                <input type="email" name="email" required placeholder="jane@example.com">
-                            </div>
-                        </div>
-
-                        <div class="form-grid-2">
-                            <div class="form-group">
-                                <label>Event Date</label>
-                                <input type="date" name="date" required>
-                            </div>
-                            <div class="form-group">
-                                <label>Estimated Guest Count</label>
-                                <input type="number" name="guests" min="5" max="500" required placeholder="e.g., 35">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Selected Package or Special Requests</label>
-                            <textarea name="message" rows="4" placeholder="Tell us about your event details, dietary restrictions, or package preference..."></textarea>
-                        </div>
-
-                        <button type="submit" class="btn-submit">Submit Catering Request</button>
-                    </form>
-                </div>
+            <div class="header-actions">
+                <a href="catering.html" class="btn-catering active">Book Catering</a>
+                <button id="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
-        </section>
+        </div>
+
+        <div id="mobile-menu" class="mobile-drawer hidden">
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Our Menu</a>
+            <a href="gallery.html">Photo Gallery</a>
+            <a href="location.html">Location & Maps</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="catering.html">Book Catering</a>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container text-center">
+            <span class="brand-badge">Events & Gatherings</span>
+            <h1 class="page-title">Book Catering</h1>
+            <p class="page-description">Bring our specialty coffee bar and fresh bakery treats to your special event.</p>
+        </div>
+    </section>
+
+    <main class="container page-content">
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="event-name">Event / Contact Name</label>
+                <input type="text" id="event-name" placeholder="Jane Smith" required>
+            </div>
+            <div class="form-group">
+                <label for="event-date">Event Date</label>
+                <input type="date" id="event-date" required>
+            </div>
+            <div class="form-group">
+                <label for="guest-count">Estimated Guest Count</label>
+                <input type="number" id="guest-count" placeholder="50" required>
+            </div>
+            <div class="form-group">
+                <label for="catering-details">Catering Details / Special Requests</label>
+                <textarea id="catering-details" rows="5" placeholder="Let us know what pastries or drinks you would like served." required></textarea>
+            </div>
+            <button type="submit" class="btn-hero-brand">Submit Catering Request</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <span class="footer-title">Brew & Blossom Cafe</span>
+                <p class="footer-copy">&copy; 2026 Brew & Blossom Cafe. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="menu.html">Menu</a>
+                <a href="catering.html">Catering</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
