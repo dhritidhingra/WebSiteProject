@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Brew & Blossom Cafe - Our passion for culinary arts, scratch-made pastries, and specialty coffee.">
+    <meta name="author" content="Brew & Blossom Cafe">
+    <title>About Us | Brew & Blossom Cafe</title>
+    
+    <link rel="stylesheet" href="../styling/style.css">
+    <script src="../styling/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGATION HEADER -->
+    <header id="site-header">
+        <div class="nav-container">
+            <a href="home.html" class="logo-wrapper">
+                <img src="../styling/images/Logo.png" alt="Brew & Blossom Logo" class="custom-logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">Brew & Blossom</span>
+                    <span class="logo-subtitle">Artisan Cafe & Bakery</span>
+                </div>
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="about.html" class="active">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="location.html">Location</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="catering.html" class="btn-catering">Book Catering</a>
+                <button id="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-drawer hidden">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Our Menu</a>
+            <a href="gallery.html">Photo Gallery</a>
+            <a href="location.html">Location & Maps</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="catering.html">Book Catering</a>
+        </div>
+    </header>
+
+    <!-- PAGE HERO BANNER -->
+    <section class="page-banner">
+        <div class="container text-center">
+            <span class="brand-badge">Our Story & Philosophy</span>
+            <h1 class="page-title">About Brew & Blossom</h1>
+            <p class="page-description">An enduring passion for the culinary arts, boutique baking, and specialty coffee.</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT SECTIONS -->
+    <main>
+        
+        <!-- PART 1: THE STORY OF PASSION (Light Cream Section) -->
+        <section class="about-section-wrapper light-bg">
+            <div class="container">
+                <div class="about-section-row">
+                    <div class="about-text">
+                        <span class="brand-badge" style="margin-bottom: 0.5rem; display:inline-block;">Rooted in Passion</span>
+                        <h2 class="section-title-dark">A Lifelong Dream Brewed to Life</h2>
+                        <p style="margin-bottom: 1rem;">Brew & Blossom Cafe is built on a deep, enduring passion for the culinary arts and the warmth of an independent neighborhood bakery. What began as a dream to create a welcoming local gathering space has grown into a boutique sanctuary dedicated to comfort and quality.</p>
+                        <p>Surrounded by botanicals and natural sunlight, our space is designed for meaningful conversations, creative mornings, and a genuine appreciation for slow-crafted hospitality.</p>
+                    </div>
+                    <div class="about-image-card">
+                        <img src="../styling/images/showcase.png" alt="Artisan Bakery Interior & Showcase" class="rounded-img shadow-effect">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PART 2: THE DESSERTS & BAKING CRAFT (Dark Espresso Contrast Block) -->
+        <section class="about-section-wrapper dark-bg">
+            <div class="container">
+                <div class="about-section-row reverse-row">
+                    <div class="about-image-card">
+                        <img src="../styling/images/showcase2.png" alt="Fresh Desserts and Pastries" class="rounded-img border-gold">
+                    </div>
+                    <div class="about-text dark-theme-text">
+                        <span class="brand-badge" style="margin-bottom: 0.5rem; display:inline-block;">Scratch-Made Daily</span>
+                        <h2 class="section-title-light">Artisan Pastries & Decadent Desserts</h2>
+                        <p style="margin-bottom: 1rem;">Our bakers arrive before dawn every single day, working with pure butter, rich chocolate, fresh fruits, and fine ingredients to bake everything entirely from scratch.</p>
+                        <p>From flaky croissants to rich signature tiramisu slices and custom-glazed cakes, every treat is crafted to offer a touch of boutique elegance in every single bite. Taste the difference that true dedication makes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <span class="footer-title">Brew & Blossom Cafe</span>
+                <p class="footer-copy">&copy; 2026 Brew & Blossom Cafe. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="menu.html">Menu</a>
+                <a href="catering.html">Catering</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the extensive artisan menu at Brew & Blossom Cafe - Cakes, savory breads, fusion desserts, coffees, and specialty teas.">
+    <meta name="author" content="Brew & Blossom Cafe">
+    <title>Our Menu | Brew & Blossom Cafe</title>
+    
+    <link rel="stylesheet" href="../styling/style.css">
+    <script src="../styling/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGATION HEADER -->
+    <header id="site-header">
+        <div class="nav-container">
+            <a href="home.html" class="logo-wrapper">
+                <img src="../styling/images/Logo.png" alt="Brew & Blossom Logo" class="custom-logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">Brew & Blossom</span>
+                    <span class="logo-subtitle">Artisan Cafe & Bakery</span>
+                </div>
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="about.html">About</a>
+                <a href="menu.html" class="active">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="location.html">Location</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="catering.html" class="btn-catering">Book Catering</a>
+                <button id="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-drawer hidden">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="menu.html">Our Menu</a>
+            <a href="gallery.html">Photo Gallery</a>
+            <a href="location.html">Location & Maps</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="catering.html">Book Catering</a>
+        </div>
+    </header>
+
+    <!-- PAGE HERO BANNER -->
+    <section class="page-banner">
+        <div class="container text-center">
+            <span class="brand-badge">Freshly Prepared Daily</span>
+            <h1 class="page-title">Brew & Blossom Menu</h1>
+            <p class="page-description">Explore our full selection of handcrafted coffees, teas, artisan breads, and boutique desserts.</p>
+        </div>
+    </section>
+
+    <!-- MENU CONTENT CONTAINER -->
+    <main class="menu-main-wrapper">
+
+        <!-- SECTION 1: CAKES & PASTRIES -->
+        <section class="menu-section light-section">
+            <div class="container">
+                <div class="menu-category-header">
+                    <h2>Cakes & Pastries</h2>
+                    <p>Delicate, buttery layers and rich house-made cream cakes baked fresh every morning.</p>
+                </div>
+                <div class="menu-grid">
+                    <!-- Item 1 -->
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="../styling/images/croissant.png" alt="Classic Butter Croissant">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Classic Butter Croissant</h3>
+                            <p>Flaky, golden layers made with 100% European butter.</p>
+                            <span class="menu-item-price">$4.25</span>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="../styling/images/coconut.png" alt="Coconut Lilikoi Puff Pastry">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Coconut Lilikoi Puff Pastry</h3>
+                            <p>Crisp, flaky puff pastry filled with tropical passion fruit curd and toasted coconut flakes.</p>
+                            <span class="menu-item-price">$4.95</span>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="../styling/images/tart.png" alt="Strawberry Fruit Tart">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Strawberry Fruit Tart</h3>
+                            <p>Sweet vanilla custard paired with fresh glazed strawberries in a crisp tart shell.</p>
+                            <span class="menu-item-price">$5.95</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: ARTISAN SAVORY BREADS & BAKES -->
+        <section class="menu-section dark-section">
+            <div class="container">
+                <div class="menu-category-header dark-header">
+                    <h2>Artisan Savory Breads & Bakes</h2>
+                    <p>Warm, hearth-baked savory specialties packed with bold spices, cheeses, and smoked bacon.</p>
+                </div>
+                <div class="menu-grid">
+                    <!-- Item 1 -->
+                    <div class="menu-card dark-card">
+                        <div class="menu-img-container">
+                            <img src="../styling/images/jalapeno.png" alt="Garlic Jalapeño Cheddar Sourdough">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Garlic Jalapeño Cheddar Sourdough</h3>
+                            <p>Artisan sourdough loaded with roasted garlic, diced fresh jalapeños, and melted aged cheddar cheese.</p>
+                            <span class="menu-item-price">$7.75</span>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="menu-card dark-card">
+                        <div class="menu-img-container">
+                            <img src="../styling/images/bacon.png" alt="Bacon & Gruyère Croissant Pinwheel">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Bacon & Gruyère Pinwheel</h3>
+                            <p>Savory rolled puff pastry layered with thick-cut smoked bacon, melted Gruyère, and cracked black pepper.</p>
+                            <span class="menu-item-price">$6.50</span>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="menu-card dark-card">
+                        <div class="menu-img-container">
+                            <img src="../styling/images/focaccia.png" alt="Rosemary Garlic Focaccia">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Rosemary Garlic Focaccia</h3>
+                            <p>Oven-baked flatbread infused with roasted garlic confit, extra virgin olive oil, and sea salt flakes.</p>
+                            <span class="menu-item-price">$6.25</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: INDIAN FUSION DESSERTS, TIRAMISU & TRES LECHES -->
+        <section class="menu-section light-section">
+            <div class="container">
+                <div class="menu-category-header">
+                    <h2>Global Classics & Indian Fusion</h2>
+                    <p>Signature tiramisu, tres leches, and unique desserts infused with traditional Indian spices.</p>
+                </div>
+                <div class="menu-grid">
+                    <!-- Item 1 -->
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="../styling/images/tiramisu.png" alt="Tiramisu Slice">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Tiramisu Slice</h3>
+                            <p>Espresso-soaked ladyfingers layered with rich mascarpone cream and cocoa dusting.</p>
+                            <span class="menu-item-price">$6.50</span>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="../styling/images/tres.png" alt="Strawberry Tres Leches Cake">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Strawberry Tres Leches Cake</h3>
+                            <p>Ultra-moist sponge cake soaked in three sweet milks, topped with fresh whipped cream and berries.</p>
+                            <span class="menu-item-price">$6.75</span>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="../styling/images/mango.png" alt="Mango Cardamom Pudding">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Mango Cardamom Pudding</h3>
+                            <p>Silky sweet mango puree layered with cardamom-infused cream and crushed pistachios.</p>
+                            <span class="menu-item-price">$6.25</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: COFFEES & ESPRESSO -->
+        <section class="menu-section dark-section">
+            <div class="container">
+                <div class="menu-category-header dark-header">
+                    <h2>Specialty Coffees & Espresso</h2>
+                    <p>Single-origin roasts and masterfully pulled shots crafted by expert baristas.</p>
+                </div>
+                <div class="menu-grid">
+                    <!-- Item 1 -->
+                    <div class="menu-card dark-card">
+                        <div class="menu-img-container">
+                            <img src="../styling/images/lavender.png" alt="Honey Lavender Latte">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Honey Lavender Latte</h3>
+                            <p>Double-shot espresso paired with organic local honey, lavender infusion, and steamed milk.</p>
+                            <span class="menu-item-price">$5.75</span>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="menu-card dark-card">
+                        <div class="menu-img-container">
+                            <img src="../styling/images/pour.png" alt="Single-Origin Pour Over">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Single-Origin Pour Over</h3>
+                            <p>Hand-poured seasonal single-origin coffee showcasing distinct fruit and floral notes.</p>
+                            <span class="menu-item-price">$4.50</span>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="menu-card dark-card">
+                        <div class="menu-img-container">
+                            <img src="../styling/images/tonic.png" alt="Espresso Tonic">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Espresso Tonic</h3>
+                            <p>Refreshing chilled craft tonic water poured over ice and topped with a double espresso shot.</p>
+                            <span class="menu-item-price">$4.75</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: TEAS & BOTANICAL INFUSIONS -->
+        <section class="menu-section light-section">
+            <div class="container">
+                <div class="menu-category-header">
+                    <h2>Teas & Botanical Infusions</h2>
+                    <p>Soothing organic loose-leaf teas, authentic chai, and iced botanical blends.</p>
+                </div>
+                <div class="menu-grid">
+                    <!-- Item 1 -->
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="../styling/images/matcha.png" alt="Matcha Blossom Latte">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Matcha Blossom Latte</h3>
+                            <p>Ceremonial-grade Japanese matcha whisked with steamed milk and a touch of vanilla bean.</p>
+                            <span class="menu-item-price">$5.50</span>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="../styling/images/chai.png" alt="Aromatic Masala Chai Latte">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Aromatic Masala Chai Latte</h3>
+                            <p>Slow-steeped black tea infused with cardamom, ginger, cinnamon, cloves, and steamed milk.</p>
+                            <span class="menu-item-price">$5.25</span>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="menu-card">
+                        <div class="menu-img-container">
+                            <img src="../styling/images/hibiscus.png" alt="Hibiscus Berry Iced Tea">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Hibiscus Berry Iced Tea</h3>
+                            <p>Refreshing tart hibiscus flower tea steeped with dried berries, mint leaves, and raw cane sugar.</p>
+                            <span class="menu-item-price">$4.75</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: SMALL BITE-SIZED DESSERTS -->
+        <section class="menu-section dark-section">
+            <div class="container">
+                <div class="menu-category-header dark-header">
+                    <h2>Small Bite-Sized Desserts</h2>
+                    <p>Delightful miniature treats and macarons perfect for sampling or gifting.</p>
+                </div>
+                <div class="menu-grid">
+                    <!-- Item 1 -->
+                    <div class="menu-card dark-card">
+                        <div class="menu-img-container">
+                            <img src="../styling/images/mac.png" alt="Assorted French Macarons">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Assorted French Macarons</h3>
+                            <p>Delicate almond meringue shells filled with rich ganache (box of 4 assorted flavors).</p>
+                            <span class="menu-item-price">$8.50</span>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="menu-card dark-card">
+                        <div class="menu-img-container">
+                            <img src="../styling/images/dark.png" alt="Mini Dark Chocolate Truffles">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Mini Dark Chocolate Truffles</h3>
+                            <p>Hand-rolled single-origin dark chocolate ganache dusted in Dutch cocoa powder.</p>
+                            <span class="menu-item-price">$5.00</span>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="menu-card dark-card">
+                        <div class="menu-img-container">
+                            <img src="../styling/images/mini.png" alt="Mini Berry Fruit Petites">
+                        </div>
+                        <div class="menu-card-body">
+                            <h3>Mini Berry Fruit Petites</h3>
+                            <p>Bite-sized butter pastry cups filled with pastry cream and fresh summer berries.</p>
+                            <span class="menu-item-price">$6.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <span class="footer-title">Brew & Blossom Cafe</span>
+                <p class="footer-copy">&copy; 2026 Brew & Blossom Cafe. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="menu.html">Menu</a>
+                <a href="catering.html">Catering</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
