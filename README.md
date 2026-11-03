@@ -1,4 +1,5 @@
 # WebSiteProject
+# Link to the site: https://dhritidhingra.github.io/WebSiteProject/pages/home.html
 
 ## Cafe Website- Blissfully Baked & Brewed
 
