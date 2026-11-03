@@ -26,7 +26,6 @@
             </a>
 
             <nav class="desktop-nav">
-                <a href="home.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="menu.html">Menu</a>
                 <a href="gallery.html">Gallery</a>
@@ -43,7 +42,6 @@
         </div>
 
         <div id="mobile-menu" class="mobile-drawer hidden">
-            <a href="home.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="menu.html">Our Menu</a>
             <a href="gallery.html">Photo Gallery</a>
@@ -62,11 +60,11 @@
         </div>
     </section>
 
-    <!-- CATERING PACKAGES & BOOKING FORM -->
+    <!-- CATERING PACKAGES, TABLE & BOOKING FORM -->
     <main class="container page-content">
         
         <!-- CATERING PACKAGES GRID -->
-        <div class="catering-packages-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 4rem;">
+        <div class="catering-packages-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 3rem;">
             
             <div class="catering-card" style="background: #FFF; border: 1px solid var(--border-color); border-radius: 16px; padding: 2rem; box-shadow: 0 8px 25px rgba(0,0,0,0.04);">
                 <div class="contact-icon" style="margin-bottom: 1rem;"><i class="fa-solid fa-mug-hot"></i></div>
@@ -89,6 +87,45 @@
                 <span style="font-weight: 700; color: var(--gold-accent); font-size: 1.1rem;">Starting at $450</span>
             </div>
 
+        </div>
+
+        <!-- CATERING PACKAGE COMPARISON TABLE -->
+        <div class="catering-table-container" style="max-width: 950px; margin: 0 auto 4rem auto; background: #FFF; padding: 2rem; border-radius: 16px; border: 1px solid var(--border-color); box-shadow: 0 8px 25px rgba(0,0,0,0.04); overflow-x: auto;">
+            <div class="text-center" style="margin-bottom: 1.5rem;">
+                <span class="brand-badge" style="margin-bottom: 0.5rem; display:inline-block;">Package Comparison</span>
+                <h2 style="font-size: 1.75rem; color: var(--espresso-dark);">Catering Offerings Overview</h2>
+            </div>
+            
+            <table class="catering-table">
+                <thead>
+                    <tr>
+                        <th>Package Name</th>
+                        <th>Best Suited For</th>
+                        <th>Includes</th>
+                        <th>Starting Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Morning Espresso Bar</strong></td>
+                        <td>Corporate meetings & morning mixers</td>
+                        <td>Mobile espresso setup, professional baristas, signature lattes, pour-overs, and teas</td>
+                        <td>$250</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pastry & Bakery Platter</strong></td>
+                        <td>Office breakfasts & casual gatherings</td>
+                        <td>Assorted butter croissants, savory focaccia bites, and fresh seasonal fruit tarts</td>
+                        <td>$180</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Grand Celebration Spread</strong></td>
+                        <td>Weddings, galas, & large celebrations</td>
+                        <td>Full dessert experience with French macarons, tres leches slices, and drink pairings</td>
+                        <td>$450</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <!-- CATERING REQUEST FORM -->
