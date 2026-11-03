@@ -18,14 +18,14 @@
     <header id="site-header">
         <div class="nav-container">
             <a href="home.html" class="logo-wrapper">
-                <img src="../styling/images/Logo.png" alt="Brew & Blossom Logo" class="custom-logo-img">
+                <img src="../styling/images/Logo.png" alt="Brew & Blossom Artisan Cafe Logo" class="custom-logo-img">
                 <div class="logo-text">
                     <span class="logo-title">Brew & Blossom</span>
                     <span class="logo-subtitle">Artisan Cafe & Bakery</span>
                 </div>
             </a>
 
-            <nav class="desktop-nav">
+            <nav class="desktop-nav" aria-label="Main Navigation">
                 <a href="about.html">About</a>
                 <a href="menu.html">Menu</a>
                 <a href="gallery.html">Gallery</a>
@@ -35,8 +35,9 @@
 
             <div class="header-actions">
                 <a href="catering.html" class="btn-catering active">Book Catering</a>
-                <button id="mobile-menu-btn" onclick="toggleMobileMenu()">
-                    <i class="fa-solid fa-bars"></i>
+                <!-- ACCESSIBILITY FIX: Added aria-label and aria-hidden -->
+                <button id="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
@@ -56,7 +57,7 @@
         <div class="container text-center">
             <span class="brand-badge">Elevate Your Gatherings</span>
             <h1 class="page-title">Brew & Blossom Event Catering</h1>
-            <p class="page-description">Bring handcrafted coffees, fresh pastries, and boutique dessert bars to your next corporate event or private celebration.</p>
+            <p class="page-description" style="color: #FAF7F2;">Bring handcrafted coffees, fresh pastries, and boutique dessert bars to your next corporate event or private celebration.</p>
         </div>
     </section>
 
@@ -67,24 +68,25 @@
         <div class="catering-packages-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 3rem;">
             
             <div class="catering-card" style="background: #FFF; border: 1px solid var(--border-color); border-radius: 16px; padding: 2rem; box-shadow: 0 8px 25px rgba(0,0,0,0.04);">
-                <div class="contact-icon" style="margin-bottom: 1rem;"><i class="fa-solid fa-mug-hot"></i></div>
-                <h3 style="font-size: 1.3rem; color: var(--espresso-dark); margin-bottom: 0.5rem;">Morning Espresso Bar</h3>
-                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Mobile espresso setup with baristas, featuring signature lattes, pour-overs, and loose-leaf teas.</p>
-                <span style="font-weight: 700; color: var(--gold-accent); font-size: 1.1rem;">Starting at $250</span>
+                <div class="contact-icon" style="margin-bottom: 1rem;"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></div>
+                <h2 style="font-size: 1.3rem; color: var(--espresso-dark); margin-bottom: 0.5rem;">Morning Espresso Bar</h2>
+                <!-- ACCESSIBILITY FIX: Darkened text color from var(--text-muted) to #3A322C for high contrast -->
+                <p style="color: #3A322C; font-size: 0.9rem; margin-bottom: 1.5rem;">Mobile espresso setup with baristas, featuring signature lattes, pour-overs, and loose-leaf teas.</p>
+                <span style="font-weight: 700; color: #8A6828; font-size: 1.1rem;">Starting at $250</span>
             </div>
 
             <div class="catering-card" style="background: #FFF; border: 1px solid var(--border-color); border-radius: 16px; padding: 2rem; box-shadow: 0 8px 25px rgba(0,0,0,0.04);">
-                <div class="contact-icon" style="margin-bottom: 1rem;"><i class="fa-solid fa-cookie-bite"></i></div>
-                <h3 style="font-size: 1.3rem; color: var(--espresso-dark); margin-bottom: 0.5rem;">Pastry & Bakery Platter</h3>
-                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Assorted butter croissants, savory focaccia bites, and fruit tarts baked fresh the morning of your event.</p>
-                <span style="font-weight: 700; color: var(--gold-accent); font-size: 1.1rem;">Starting at $180</span>
+                <div class="contact-icon" style="margin-bottom: 1rem;"><i class="fa-solid fa-cookie-bite" aria-hidden="true"></i></div>
+                <h2 style="font-size: 1.3rem; color: var(--espresso-dark); margin-bottom: 0.5rem;">Pastry & Bakery Platter</h2>
+                <p style="color: #3A322C; font-size: 0.9rem; margin-bottom: 1.5rem;">Assorted butter croissants, savory focaccia bites, and fruit tarts baked fresh the morning of your event.</p>
+                <span style="font-weight: 700; color: #8A6828; font-size: 1.1rem;">Starting at $180</span>
             </div>
 
             <div class="catering-card" style="background: #FFF; border: 1px solid var(--border-color); border-radius: 16px; padding: 2rem; box-shadow: 0 8px 25px rgba(0,0,0,0.04);">
-                <div class="contact-icon" style="margin-bottom: 1rem;"><i class="fa-solid fa-cake-candles"></i></div>
-                <h3 style="font-size: 1.3rem; color: var(--espresso-dark); margin-bottom: 0.5rem;">Grand Celebration Spread</h3>
-                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Full dessert & drink experience featuring French macarons, tres leches slices, and custom drink pairings.</p>
-                <span style="font-weight: 700; color: var(--gold-accent); font-size: 1.1rem;">Starting at $450</span>
+                <div class="contact-icon" style="margin-bottom: 1rem;"><i class="fa-solid fa-cake-candles" aria-hidden="true"></i></div>
+                <h2 style="font-size: 1.3rem; color: var(--espresso-dark); margin-bottom: 0.5rem;">Grand Celebration Spread</h2>
+                <p style="color: #3A322C; font-size: 0.9rem; margin-bottom: 1.5rem;">Full dessert & drink experience featuring French macarons, tres leches slices, and custom drink pairings.</p>
+                <span style="font-weight: 700; color: #8A6828; font-size: 1.1rem;">Starting at $450</span>
             </div>
 
         </div>
@@ -99,10 +101,10 @@
             <table class="catering-table">
                 <thead>
                     <tr>
-                        <th>Package Name</th>
-                        <th>Best Suited For</th>
-                        <th>Includes</th>
-                        <th>Starting Price</th>
+                        <th scope="col">Package Name</th>
+                        <th scope="col">Best Suited For</th>
+                        <th scope="col">Includes</th>
+                        <th scope="col">Starting Price</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -137,7 +139,6 @@
 
             <form action="https://formspree.io/f/mpppkpga" method="POST" class="contact-form">
                 
-                <!-- Redirect back to catering.html upon submission -->
                 <input type="hidden" name="_next" value="catering.html">
 
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
@@ -192,7 +193,7 @@
                 <span class="footer-title">Brew & Blossom Cafe</span>
                 <p class="footer-copy">&copy; 2026 Brew & Blossom Cafe. All rights reserved.</p>
             </div>
-            <div class="footer-links">
+            <div class="footer-links" aria-label="Footer Navigation">
                 <a href="menu.html">Menu</a>
                 <a href="catering.html">Catering</a>
                 <a href="contact.html">Contact</a>
