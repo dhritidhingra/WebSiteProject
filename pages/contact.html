@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Brew & Blossom Cafe - Send us a message or inquiry.">
+    <meta name="description" content="Contact Brew & Blossom Cafe - Send us a message, inquiry, or general feedback.">
+    <meta name="author" content="Brew & Blossom Cafe">
     <title>Contact Us | Brew & Blossom Cafe</title>
     
     <link rel="stylesheet" href="../styling/style.css">
@@ -13,6 +14,7 @@
 </head>
 <body>
 
+    <!-- NAVIGATION HEADER -->
     <header id="site-header">
         <div class="nav-container">
             <a href="home.html" class="logo-wrapper">
@@ -24,6 +26,7 @@
             </a>
 
             <nav class="desktop-nav">
+                <a href="home.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="menu.html">Menu</a>
                 <a href="gallery.html">Gallery</a>
@@ -40,6 +43,7 @@
         </div>
 
         <div id="mobile-menu" class="mobile-drawer hidden">
+            <a href="home.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="menu.html">Our Menu</a>
             <a href="gallery.html">Photo Gallery</a>
@@ -49,32 +53,88 @@
         </div>
     </header>
 
+    <!-- PAGE HERO BANNER -->
     <section class="page-banner">
         <div class="container text-center">
             <span class="brand-badge">Get in Touch</span>
-            <h1 class="page-title">Follow Us / Contact</h1>
-            <p class="page-description">We would love to hear from you. Reach out with questions or feedback.</p>
+            <h1 class="page-title">Contact & Community</h1>
+            <p class="page-description">We would love to hear from you. Reach out with questions, feedback, or general inquiries.</p>
         </div>
     </section>
 
+    <!-- CONTACT SECTION CONTAINER -->
     <main class="container page-content">
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" placeholder="John Doe" required>
+        <div class="contact-wrapper">
+            
+            <!-- LEFT COLUMN: CONTACT INFO & SOCIALS -->
+            <div class="contact-info-card">
+                <span class="brand-badge" style="margin-bottom: 0.5rem; display:inline-block;">Reach Out</span>
+                <h2>We'd Love to Hear From You</h2>
+                <p style="margin-bottom: 2rem; color: var(--text-muted);">Have a question about our menu, dietary options, or private cafe reservations? Send us a note and our team will get back to you shortly.</p>
+
+                <div class="contact-detail-item">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div>
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:dhritidhingra17@gmail.com" style="color: inherit; text-decoration: none;">dhritidhingra17@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-detail-item">
+                    <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p><a href="tel:9015550199" style="color: inherit; text-decoration: none;">(901) 555-0199</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-detail-item">
+                    <div class="contact-icon"><i class="fa-solid fa-share-nodes"></i></div>
+                    <div>
+                        <h3>Follow Our Journey</h3>
+                        <div class="social-links-row">
+                            <a href="https://www.instagram.com/dhriti_dhingraa/" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/dhriti.dhingra.2025/" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="john@example.com" required>
+
+            <!-- RIGHT COLUMN: FUNCTIONAL CONTACT FORM -->
+            <div class="contact-form-card">
+                <form action="https://formspree.io/f/mrpprprp" method="POST" class="contact-form">
+                    
+                    <!-- Redirect back to contact.html upon submission -->
+                    <input type="hidden" name="_next" value="contact.html">
+
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="General Inquiry, Feedback, etc.">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-catering" style="width: 100%; text-align: center; justify-content: center;">Send Message</button>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="message">Your Message</label>
-                <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
-            </div>
-            <button type="submit" class="btn-hero-brand">Send Message</button>
-        </form>
+
+        </div>
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <div class="container footer-content">
             <div>

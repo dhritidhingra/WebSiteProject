@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Find Brew & Blossom Cafe - Location, map, hours of operation.">
+    <meta name="description" content="Find Brew & Blossom Cafe location, operating hours, and parking information. Visit our artisan sanctuary today.">
+    <meta name="author" content="Brew & Blossom Cafe">
     <title>Location & Hours | Brew & Blossom Cafe</title>
     
     <link rel="stylesheet" href="../styling/style.css">
@@ -13,6 +14,7 @@
 </head>
 <body>
 
+    <!-- NAVIGATION HEADER -->
     <header id="site-header">
         <div class="nav-container">
             <a href="home.html" class="logo-wrapper">
@@ -24,6 +26,7 @@
             </a>
 
             <nav class="desktop-nav">
+                <a href="home.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="menu.html">Menu</a>
                 <a href="gallery.html">Gallery</a>
@@ -40,6 +43,7 @@
         </div>
 
         <div id="mobile-menu" class="mobile-drawer hidden">
+            <a href="home.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="menu.html">Our Menu</a>
             <a href="gallery.html">Photo Gallery</a>
@@ -49,30 +53,77 @@
         </div>
     </header>
 
+    <!-- PAGE HERO BANNER -->
     <section class="page-banner">
         <div class="container text-center">
-            <span class="brand-badge">Visit Us</span>
+            <span class="brand-badge">Visit Our Sanctuary</span>
             <h1 class="page-title">Location & Hours</h1>
-            <p class="page-description">Stop by for your daily roast and fresh morning pastries.</p>
+            <p class="page-description">Stop by for your daily roast, warm scratch-baked pastries, and cozy conversations.</p>
         </div>
     </section>
 
+    <!-- LOCATION & MAP CONTAINER -->
     <main class="container page-content">
-        <div class="location-card-grid">
-            <div class="info-box">
-                <i class="fa-solid fa-location-dot location-icon"></i>
-                <h3>Our Cafe</h3>
-                <p>123 Blossom Way, Suite A<br>Memphis, TN 38111</p>
+        <div class="location-wrapper">
+            
+            <!-- LEFT COLUMN: HOURS & INFO -->
+            <div class="location-info-card">
+                <span class="brand-badge" style="margin-bottom: 0.5rem; display:inline-block;">Sanctuary Details</span>
+                <h2 class="location-title">Visit Brew & Blossom</h2>
+                
+                <!-- Address Section -->
+                <div class="info-block">
+                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <h3>Address</h3>
+                        <p>1234 Blossom Lane, Suite 100<br>Memphis, TN 38111</p>
+                    </div>
+                </div>
+
+                <!-- Hours Section -->
+                <div class="info-block">
+                    <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                    <div>
+                        <h3>Cafe Hours</h3>
+                        <ul class="hours-list">
+                            <li><span>Monday – Thursday:</span> <strong>7:00 AM – 6:00 PM</strong></li>
+                            <li><span>Friday – Saturday:</span> <strong>7:00 AM – 8:00 PM</strong></li>
+                            <li><span>Sunday:</span> <strong>8:00 AM – 5:00 PM</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Parking & Amenities -->
+                <div class="info-block">
+                    <div class="info-icon"><i class="fa-solid fa-square-parking"></i></div>
+                    <div>
+                        <h3>Parking & Amenities</h3>
+                        <p>Free dedicated lot behind the building and street parking available. Complimentary high-speed Wi-Fi and indoor/outdoor seating.</p>
+                    </div>
+                </div>
+
+                <div class="location-actions">
+                    <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                        <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+                    </a>
+                </div>
             </div>
 
-            <div class="info-box">
-                <i class="fa-solid fa-clock location-icon"></i>
-                <h3>Cafe Hours</h3>
-                <p>Monday – Friday: 6:30 AM – 6:00 PM<br>Saturday – Sunday: 7:00 AM – 7:00 PM</p>
+            <!-- RIGHT COLUMN: GOOGLE MAPS EMBED -->
+            <div class="map-card-container">
+                <iframe 
+                    class="google-map-iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104523.58289457635!2d-89.987000!3d35.149500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d57e1111111111%3A0x1111111111111111!2sMemphis%2C%20TN!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
+
         </div>
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <div class="container footer-content">
             <div>
