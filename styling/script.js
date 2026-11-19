@@ -2,12 +2,30 @@
    BREW & BLOSSOM CAFE - INTERACTIVITY SCRIPT
    ========================================== */
 
-// 1. Dynamic UI Action: Mobile Navigation Drawer Toggle
-function toggleMobileMenu() {
-    const menu = document.getElementById('mobile-menu');
-    if (menu) {
-        menu.classList.toggle('hidden');
-    }
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
+export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <header id="site-header">
+      {/* Desktop Nav using <Link to="/menu">Menu</Link> */}
+      <button
+        id="mobile-menu-btn"
+        aria-label="Toggle Navigation Menu"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        <i className="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+
+      {menuOpen && (
+        <div id="mobile-menu" className="mobile-drawer">
+          {/* Mobile links */}
+        </div>
+      )}
+    </header>
+  );
 }
 
 // 2. JavaScript Form Validation & Handling
