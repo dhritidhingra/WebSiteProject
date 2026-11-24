@@ -1,7 +1,6 @@
 export default function Location() {
   return (
     <>
-      {/* PAGE HERO BANNER */}
       <section className="page-banner">
         <div className="container text-center">
           <span className="brand-badge">Visit Our Sanctuary</span>
@@ -13,20 +12,12 @@ export default function Location() {
         </div>
       </section>
 
-      {/* LOCATION & MAP CONTAINER */}
       <main className="container page-content">
         <div className="location-wrapper">
-          {/* LEFT COLUMN: HOURS & INFO */}
           <div className="location-info-card">
-            <span
-              className="brand-badge"
-              style={{ marginBottom: '0.5rem', display: 'inline-block' }}
-            >
-              Sanctuary Details
-            </span>
+            <span className="brand-badge badge-inline">Sanctuary Details</span>
             <h2 className="location-title">Visit Brew &amp; Blossom</h2>
 
-            {/* Address Section */}
             <div className="info-block">
               <div className="info-icon">
                 <i className="fa-solid fa-location-dot" aria-hidden="true"></i>
@@ -41,7 +32,6 @@ export default function Location() {
               </div>
             </div>
 
-            {/* Hours Section */}
             <div className="info-block">
               <div className="info-icon">
                 <i className="fa-solid fa-clock" aria-hidden="true"></i>
@@ -64,10 +54,12 @@ export default function Location() {
               </div>
             </div>
 
-            {/* Parking & Amenities Section */}
             <div className="info-block">
               <div className="info-icon">
-                <i className="fa-solid fa-square-parking" aria-hidden="true"></i>
+                <i
+                  className="fa-solid fa-square-parking"
+                  aria-hidden="true"
+                ></i>
               </div>
               <div>
                 <h3>Parking &amp; Amenities</h3>
@@ -79,28 +71,28 @@ export default function Location() {
               </div>
             </div>
 
-            <div className="directions-link-row">
+            <div className="location-actions">
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Memphis,+TN+38111"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="directions-link"
+                className="btn-catering"
               >
-                <i className="fa-solid fa-location-arrow" aria-hidden="true"></i>{' '}
+                <i
+                  className="fa-solid fa-location-arrow"
+                  aria-hidden="true"
+                ></i>{' '}
                 Get Directions
               </a>
             </div>
           </div>
 
-          {/* RIGHT COLUMN: EMBEDDED MAP */}
-          <div className="location-map-card">
+          <div className="map-card-container">
             <iframe
+              className="google-map-iframe"
               title="Brew & Blossom Cafe Location Map - Memphis, TN"
               src="https://www.google.com/maps?q=Memphis,TN+38111&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0, minHeight: '460px' }}
-              allowFullScreen=""
+              allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>

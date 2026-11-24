@@ -35,7 +35,9 @@ export default function Contact() {
         setSubmitted(true);
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
-        setErrorMsg('There was a problem sending your message. Please try again.');
+        setErrorMsg(
+          'There was a problem sending your message. Please try again.'
+        );
       }
     } catch {
       setErrorMsg('Network error. Please check your connection and try again.');
@@ -46,7 +48,6 @@ export default function Contact() {
 
   return (
     <>
-      {/* PAGE HERO BANNER */}
       <section className="page-banner">
         <div className="container text-center">
           <span className="brand-badge">Get in Touch</span>
@@ -58,19 +59,12 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* CONTACT SECTION CONTAINER */}
       <main className="container page-content">
         <div className="contact-wrapper">
-          {/* LEFT COLUMN: CONTACT INFO & SOCIALS */}
           <div className="contact-info-card">
-            <span
-              className="brand-badge"
-              style={{ marginBottom: '0.5rem', display: 'inline-block' }}
-            >
-              Reach Out
-            </span>
+            <span className="brand-badge badge-inline">Reach Out</span>
             <h2>We&apos;d Love to Hear From You</h2>
-            <p style={{ marginBottom: '2rem', color: 'var(--text-muted)' }}>
+            <p className="text-muted-intro">
               Have a question about our menu, dietary options, or private cafe
               reservations? Send us a note and our team will get back to you
               shortly.
@@ -85,7 +79,7 @@ export default function Contact() {
                 <p>
                   <a
                     href="mailto:dhritidhingra17@gmail.com"
-                    style={{ color: 'inherit', textDecoration: 'none' }}
+                    className="plain-link"
                   >
                     dhritidhingra17@gmail.com
                   </a>
@@ -100,10 +94,7 @@ export default function Contact() {
               <div>
                 <h3>Call Us</h3>
                 <p>
-                  <a
-                    href="tel:9015550199"
-                    style={{ color: 'inherit', textDecoration: 'none' }}
-                  >
+                  <a href="tel:9015550199" className="plain-link">
                     (901) 555-0199
                   </a>
                 </p>
@@ -122,14 +113,19 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Instagram"
+                    aria-label="Instagram"
                   >
-                    <i className="fa-brands fa-instagram" aria-hidden="true"></i>
+                    <i
+                      className="fa-brands fa-instagram"
+                      aria-hidden="true"
+                    ></i>
                   </a>
                   <a
                     href="https://www.facebook.com/dhriti.dhingra.2025/"
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Facebook"
+                    aria-label="Facebook"
                   >
                     <i className="fa-brands fa-facebook" aria-hidden="true"></i>
                   </a>
@@ -138,11 +134,10 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* RIGHT COLUMN: FUNCTIONAL CONTACT FORM */}
           <div className="contact-form-card">
             {submitted ? (
-              <div role="status" className="form-confirmation">
-                <p>
+              <div role="status" className="contact-form text-center">
+                <p className="mb-1-25">
                   Thank you for reaching out! Your message has been sent to Brew
                   &amp; Blossom Cafe.
                 </p>
@@ -157,7 +152,7 @@ export default function Contact() {
             ) : (
               <form onSubmit={handleSubmit} className="contact-form">
                 {errorMsg && (
-                  <p role="alert" style={{ color: 'crimson', marginBottom: '1rem' }}>
+                  <p role="alert" className="form-error">
                     {errorMsg}
                   </p>
                 )}
@@ -215,13 +210,8 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="btn-catering"
+                  className="btn-catering btn-full"
                   disabled={submitting}
-                  style={{
-                    width: '100%',
-                    textAlign: 'center',
-                    justifyContent: 'center',
-                  }}
                 >
                   {submitting ? 'Sending...' : 'Send Message'}
                 </button>

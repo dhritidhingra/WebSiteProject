@@ -1,7 +1,6 @@
 export default function About() {
   return (
     <>
-      {/* PAGE HERO BANNER */}
       <section className="page-banner">
         <div className="container text-center">
           <span className="brand-badge">Our Story &amp; Philosophy</span>
@@ -13,23 +12,18 @@ export default function About() {
         </div>
       </section>
 
-      {/* MAIN CONTENT SECTIONS */}
       <main>
-        {/* PART 1: THE STORY OF PASSION (Light Cream Section) */}
         <section className="about-section-wrapper light-bg">
           <div className="container">
             <div className="about-section-row">
               <div className="about-text">
-                <span
-                  className="brand-badge"
-                  style={{ marginBottom: '0.5rem', display: 'inline-block' }}
-                >
+                <span className="brand-badge badge-inline">
                   Rooted in Passion
                 </span>
                 <h2 className="section-title-dark">
                   A Lifelong Dream Brewed to Life
                 </h2>
-                <p style={{ marginBottom: '1rem' }}>
+                <p className="mb-1">
                   Brew &amp; Blossom Cafe is built on a deep, enduring passion
                   for the culinary arts and the warmth of an independent
                   neighborhood bakery. What began as a dream to create a
@@ -45,7 +39,7 @@ export default function About() {
               <div className="about-image-card">
                 <img
                   src="/images/showcase.png"
-                  alt="Artisan Bakery Interior & Showcase"
+                  alt="Artisan Bakery Interior and Showcase"
                   className="rounded-img shadow-effect"
                 />
               </div>
@@ -53,7 +47,6 @@ export default function About() {
           </div>
         </section>
 
-        {/* PART 2: THE DESSERTS & BAKING CRAFT (Dark Espresso Contrast Block) */}
         <section className="about-section-wrapper dark-bg">
           <div className="container">
             <div className="about-section-row reverse-row">
@@ -65,16 +58,13 @@ export default function About() {
                 />
               </div>
               <div className="about-text dark-theme-text">
-                <span
-                  className="brand-badge"
-                  style={{ marginBottom: '0.5rem', display: 'inline-block' }}
-                >
+                <span className="brand-badge badge-inline">
                   Scratch-Made Daily
                 </span>
                 <h2 className="section-title-light">
                   Artisan Pastries &amp; Decadent Desserts
                 </h2>
-                <p style={{ marginBottom: '1rem' }}>
+                <p className="mb-1">
                   Our bakers arrive before dawn every single day, working with
                   pure butter, rich chocolate, fresh fruits, and fine
                   ingredients to bake everything entirely from scratch.
@@ -90,28 +80,15 @@ export default function About() {
           </div>
         </section>
 
-        {/* PART 3: YOUTUBE VIDEO FEATURE SECTION (Bonus Feature) */}
         <section className="about-section-wrapper light-bg video-section-wrapper">
           <div className="container">
-            <span
-              className="brand-badge"
-              style={{ marginBottom: '0.5rem', display: 'inline-block' }}
-            >
-              Behind the Scenes
-            </span>
+            <span className="brand-badge badge-inline">Behind the Scenes</span>
             <h2 className="section-title-dark">Watch Our Craft in Action</h2>
-            <p
-              style={{
-                maxWidth: '650px',
-                margin: '0 auto',
-                color: 'var(--text-muted)',
-              }}
-            >
+            <p className="video-intro-text">
               Step inside our kitchen and experience how our signature pastries
               and specialty coffee brews come to life every morning.
             </p>
 
-            {/* YOUTUBE VIDEO CONTAINER */}
             <div className="video-container">
               <iframe
                 src="https://www.youtube.com/embed/u_EakQkMZQk"
